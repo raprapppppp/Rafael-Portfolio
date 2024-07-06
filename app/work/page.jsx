@@ -29,7 +29,7 @@ const projects = [
       { name: "Html, Css, Javascript" },
     ],
     image: "/assets/works/project1.jpg",
-    live: "",
+    live: "https://a-plus-construction.vercel.app/",
     github: "https://github.com/raprapppppp/A-Plus-Construction",
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     category: "frontend",
     title: "Authentication-CRUD",
     description:
-      "This project used Firebase to make Authentication and CRUD, it is good practice to enhance some backend skill",
+      "This project used Firebase to make Authentication and CRUD, it is good practice to enhance some backend skill. username: admin@gmail.com and password: 1232456",
     stack: [
       ,
       { name: "React.js" },
@@ -45,8 +45,8 @@ const projects = [
       { name: "Firebase" },
     ],
     image: "/assets/works/Crud.jpg",
-    live: "",
-    github: "",
+    live: "https://authentication-crud-one.vercel.app/",
+    github: "https://github.com/raprapppppp/Authentication-CRUD",
   },
   {
     num: "03",
@@ -61,7 +61,7 @@ const projects = [
       { name: "Html, Css, Javascript" },
     ],
     image: "/assets/works/project2.jpg",
-    live: "",
+    live: "https://resto-tan.vercel.app/",
     github: "https://github.com/raprapppppp/Resto",
   },
   {
@@ -77,7 +77,7 @@ const projects = [
       { name: "Html, Css, Javascript" },
     ],
     image: "/assets/works/project3.jpg",
-    live: "",
+    live: "https://travel-journey-seven.vercel.app/",
     github: "https://github.com/raprapppppp/Travel-Journey",
   },
   {
@@ -92,7 +92,7 @@ const projects = [
       { name: "Html, Css, Javascript" },
     ],
     image: "/assets/works/project4.jpg",
-    live: "",
+    live: "https://color-picker-eight-pi.vercel.app/",
     github: "https://github.com/raprapppppp/Color-Picker",
   },
 ];

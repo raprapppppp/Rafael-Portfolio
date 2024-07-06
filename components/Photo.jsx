@@ -10,17 +10,17 @@ const Photo = () => {
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
-          transition: { delay: 0.5, duration: 0.2, ease: "easeIn" },
+          transition: { delay: 0.4, duration: 0.2, ease: "easeIn" },
         }}
       >
-        <div className="size-[298px] xl:size-[498px] mix-blend-lighten absolute">
+        <div className="size-[298px] xl:size-[506px] mix-blend-lighten absolute">
           <Image
-            src="/assets/profile.png"
+            src="/assets/gradpic.png"
             priority
             quality={100}
             fill
             alt=""
-            className="object-contain rounded-full"
+            className="object-fits rounded-full"
           />
         </div>
         <motion.svg

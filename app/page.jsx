@@ -17,7 +17,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">
               <TypeAnimation
-                sequence={["Computer Engineer.", 1000, "Frontend Dev", 1000]}
+                sequence={["Computer Engineer.", 1000, "Web Developer", 1000]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
