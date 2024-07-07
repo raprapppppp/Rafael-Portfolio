@@ -48,25 +48,35 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_ocp3tdt", "template_gjlenxo", form.current, {
-        publicKey: "kbMnH09rdxCH2d2QZ",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          alert("Sent Success fully");
-          setFirstname("");
-          setLastname("");
-          setEmail("");
-          setPhone("");
-          setMessage("");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-    e.target.reset();
+    if (
+      firstname === "" ||
+      lastname === "" ||
+      email === "" ||
+      phone === "" ||
+      message === ""
+    ) {
+      console.log("empty input fields");
+    } else {
+      emailjs
+        .sendForm("service_ocp3tdt", "template_gjlenxo", form.current, {
+          publicKey: "kbMnH09rdxCH2d2QZ",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            alert("Sent Success fully");
+            setFirstname("");
+            setLastname("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+      e.target.reset();
+    }
   };
 
   return (
@@ -90,9 +100,9 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Aliquam faucibus purus in massa tempor nec feugiat nisl.
+                Ensure that the input fields are filled out; otherwise, your
+                message won't be delivered to me. Just a reminder, there will be
+                no pop-up alert.
               </p>
 
               {/*INPUT*/}
@@ -119,7 +129,7 @@ const Contact = () => {
                   name="email"
                 />
                 <Input
-                  type="phone"
+                  type="number"
                   placeholder="Phone number"
                   onChange={(e) => setPhone(e.target.value)}
                   value={phone}

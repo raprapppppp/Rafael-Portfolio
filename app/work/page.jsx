@@ -69,7 +69,7 @@ const projects = [
     category: "frontend",
     title: "project 4",
     description:
-      "This project is good practice for the beginner to gasp mapping",
+      "This project is good practice for the beginner to gasp mapping. Reminder: this is not available in mobile view",
     stack: [
       ,
       { name: "React.js" },
@@ -84,7 +84,8 @@ const projects = [
     num: "05",
     category: "frontend",
     title: "Color-Picker",
-    description: "This project is color picker",
+    description:
+      "This project is color picker. Reminder: this is not available in mobile view",
     stack: [
       ,
       { name: "React.js" },
